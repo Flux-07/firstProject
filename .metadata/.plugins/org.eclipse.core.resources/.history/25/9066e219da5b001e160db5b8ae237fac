@@ -1,0 +1,36 @@
+package SwitchStatement;
+
+import java.util.Scanner;
+
+public class sample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		Scanner sc1=new Scanner(System.in);
+         System.out.println("Enter the number product ");
+         int product=sc.nextInt();
+         String[] Username=new String[product];
+         String[] FoodName=new String[product];
+         int[] FoodRate=new int[product];
+         int[] FoodQuantity=new int[product];
+         int[] TotalAmount=new int[product];
+         int i=0;
+         while(i<=product-1) {
+        	  System.out.println("Enter the name of user");
+        	  Username[i]=sc1.nextLine();
+        	  System.out.println("Enter the name of Food");
+        	  FoodName[i]=sc1.nextLine();
+        	  System.out.println("Enter the Amount of Food");
+        	  FoodRate[i]=sc.nextInt();
+        	  System.out.println("Enter the Quantity of Food");
+        	  FoodQuantity[i]=sc.nextInt();;
+        	  TotalAmount[i]=FoodRate[i]*FoodQuantity[i];  
+        	  i++;
+        	  
+         }
+         
+         System.out.println(Username[0]+" "+TotalAmount[0]);
+	}
+	
+}

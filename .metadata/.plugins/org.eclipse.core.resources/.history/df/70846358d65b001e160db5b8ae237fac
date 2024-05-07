@@ -1,0 +1,21 @@
+package SwitchStatement;
+
+import java.util.Scanner;
+
+public class sample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+   String[] month= {"jan","Feb","Mar","Apr","May","Jun","July","Aug","Sep","Oct","Nov","Dec"};
+   System.out.println("Enter the month number");
+   int number=sc.nextInt();
+   if(number>11) {
+	   System.out.println("To provid valid month number ");
+   }
+   else {
+	   System.out.println(month[number]);
+   }
+	}
+
+}

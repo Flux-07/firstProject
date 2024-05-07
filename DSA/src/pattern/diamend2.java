@@ -1,0 +1,31 @@
+package pattern;
+
+import java.util.Scanner;
+
+public class diamend2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Scanner sc=new Scanner(System.in);
+	         System.out.println("Enter the number");
+	         int number=sc.nextInt();
+	         for(int row=1;row<=2*number-1;row++) {
+	        	 int totalColum=(row>number?2*number-row:row);
+	        	 int totalSpace=number-totalColum;
+	        	 
+//	        	 System.out.println(totalColum);
+//	        	 System.out.println(totalSpace);
+	        	 for(int i=1;i<=totalSpace;i++) {
+	        		 System.out.print("  ");
+	        	 }
+	        	 for(int col=totalColum;col>=1;col--) {
+	        		 System.out.print(col+" ");
+	        	 }
+	        	 for(int col=2;col<=totalColum;col++) {
+	        		 System.out.print(col+" ");
+	        	 }
+	        	 System.out.println();
+	         }
+	}
+
+}

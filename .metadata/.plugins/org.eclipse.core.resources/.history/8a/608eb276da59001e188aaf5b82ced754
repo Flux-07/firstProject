@@ -1,0 +1,26 @@
+package pattern;
+import java.util.Scanner;
+
+public class program3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Scanner sc=new Scanner(System.in);
+	         System.out.println("Enter the number");
+	         int number=sc.nextInt();
+	         for(int row=1;row<=number;row++) {
+	        	 for(int space=1;space<=number-row;space++) {
+	        		 System.out.print(" ");
+	        	 }
+	        	 for(int col=row;col>=1;col--) {
+	        		 System.out.print(col);
+	        	 }
+	        	for(int i=2;i<=row;i++) {
+	        		System.out.print(i);
+	        	}
+	        	System.out.println();
+	         }
+
+	}
+
+}

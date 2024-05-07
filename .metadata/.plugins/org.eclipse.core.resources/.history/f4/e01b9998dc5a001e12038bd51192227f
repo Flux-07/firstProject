@@ -1,0 +1,28 @@
+package pattern;
+
+import java.util.Scanner;
+
+public class program12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Scanner sc=new Scanner(System.in);
+	         System.out.println("Enter the number");
+	         int number=sc.nextInt();
+	
+	for(int row=1;row<=number*2;row++) {
+	   
+//		int totalSpace=(row>number?row-number:row-1);
+//		int totalCol=(row>number?number*2-row:row);
+		
+		for(int col=5;col>=row;col--){
+			System.out.print("*");
+		}
+//		for(int space=1;space<=totalSpace;space++) {
+//			System.out.print(" ");
+//		}
+		System.out.println();
+	}
+	}
+
+}

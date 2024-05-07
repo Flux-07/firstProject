@@ -1,0 +1,21 @@
+package classnotes;
+
+import java.util.Scanner;
+
+public class series {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+     
+        System.out.println("Enter the number");
+        int num=sc.nextInt();
+         double sum=1.0/2.0;
+         
+//        for(int i=1;i<=num;i++) {
+//        	sum=sum+1/i;
+//        }
+        System.out.println(sum);
+	}
+
+}

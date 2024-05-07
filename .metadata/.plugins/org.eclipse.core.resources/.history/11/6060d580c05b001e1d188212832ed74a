@@ -1,0 +1,41 @@
+package SwitchStatement;
+
+import java.util.Scanner;
+
+public class program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		   System.out.println("Enter the number of temperature"); 
+		   int temperature=sc.nextInt();
+		   double price=100;
+		   switch(temperature) {
+		   case 1:
+			   System.out.println("");
+			   break;
+			   
+		   case 2:
+			   price=price-(price/5);
+			   System.out.println("the total Cost is :"+ price);
+			   break;
+			   
+		   case 3:
+			   price=price-(price/7);
+			   System.out.println("the total Cost is :"+ price);
+			   break;
+		   case 4:
+			   price=price-(price/9);
+			   System.out.println("the total Cost is :"+ price);
+			   break;
+			   
+			   default :
+				   
+				   price=price-(price/10);
+				   System.out.println("the total Cost is :"+ price);
+				   break;
+		   }
+		  
+	}
+
+}

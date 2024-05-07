@@ -1,0 +1,29 @@
+package pattern;
+
+import java.util.Scanner;
+
+public class program4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Scanner sc=new Scanner(System.in);
+	         System.out.println("Enter the number");
+	         int number=sc.nextInt();
+	         for(int row=1;row<=number;row++) {
+	        	 int i=number;
+	        	 for(int col=number;col>=1;col-- ) {
+	        		 if(row==number) {
+	        			 System.out.print(i);
+	        		 }
+	        		 else {
+	        			 System.out.print(col);
+	        		 }
+	        		
+	        	 }
+	        	 i--;
+	        	 System.out.println();
+	        	 
+	         }
+	}
+
+}

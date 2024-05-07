@@ -1,0 +1,19 @@
+package classnotes;
+import java.util.Scanner;
+public class averageList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner sc=new Scanner(System.in);
+        int sum=0;
+        System.out.println("Enter the number of elements");
+        int list=sc.nextInt();
+        for(int i=1;i<=list;i++) {
+        	System.out.println("Enter the value of "+i+" list");
+        	sum=sum+sc.nextInt();
+        }
+        System.out.println(sum/list);
+        
+	}
+
+}

@@ -1,0 +1,27 @@
+package classnotes;
+
+import java.util.Scanner;
+
+public class PatternRigthAngleTriangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+	     
+        System.out.println("Enter the number");
+        int number=sc.nextInt();
+        char c='a';
+        int alphabet=c;
+        int row=1;
+        while(row<=number) {
+        	int col=1;
+        	while(col<=row) {
+        		System.out.print((char)alphabet);
+        		alphabet++;
+        	}
+        	System.out.println();
+        }
+        
+	}
+
+}

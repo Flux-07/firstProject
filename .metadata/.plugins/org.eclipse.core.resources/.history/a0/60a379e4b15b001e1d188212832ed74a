@@ -1,0 +1,25 @@
+package SwitchStatement;
+
+import java.util.Scanner;
+
+public class program2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		   System.out.println("Enter the number of quatity"); 
+		   int Quantity=sc.nextInt();
+		   double price=100;
+		   switch(Quantity) {
+		   case 1:
+			   System.out.println(price);
+			   
+		   case 2:
+			   price=price-(price*0.2);
+		   }
+		   
+		System.out.println( price=price-(price*0.8));	   
+		   
+	}
+
+}

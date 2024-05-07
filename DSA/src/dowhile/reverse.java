@@ -1,0 +1,30 @@
+package dowhile;
+
+import java.util.Scanner;
+
+public class reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		   System.out.println("Enter the number "); 
+		   int number=sc.nextInt();
+		   int reference=number;
+		   int count=1;
+		   int reverse=0;
+		   do {
+			   int remender=number%10;
+			   reverse=10*reverse+remender;
+			   number=number/10;
+			   count++;
+		   }while(number!=0);
+		   
+		   if(reverse==reference) {
+			   System.out.println("the given number is palindrome");
+		   }
+		   else {
+			   System.out.println("the given number not palindrome");
+		   }
+	}
+
+}

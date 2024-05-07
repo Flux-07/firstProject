@@ -1,0 +1,24 @@
+package classnotes;
+
+import java.util.Scanner;
+
+public class series {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+     
+        System.out.println("Enter the number");
+        int num=sc.nextInt();
+         double sum=0;
+        int divideNumber=1;
+        int i=1;
+        while(i<=num) {
+        	double res=divideNumber/i;
+        	sum= (sum+res);
+        	i++;
+        }
+        System.out.println(sum);
+	}
+
+}

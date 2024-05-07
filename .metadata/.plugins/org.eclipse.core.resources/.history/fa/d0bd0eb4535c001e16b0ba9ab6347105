@@ -1,0 +1,48 @@
+package classnotes;
+import java.util.Scanner;
+public class sample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     System.out.println("Welcome to MyApp");
+     Scanner sc=new Scanner(System.in);
+     Scanner sc1=new Scanner(System.in);
+//     System.out.println("Enter the number of user");
+//     int number=sc.nextInt();
+     int number=0;
+     String[] UserName=new String[number];
+     String[] Password=new String[number];
+     boolean openApp=true;
+     number=number-1;
+     while(openApp) {
+    	 System.out.println("_________________________________________________________________________");
+    	 System.out.println("1 Create your Acount");
+    	 System.out.println("3 Exit the MyApp");
+    	 
+    	 int choice=sc.nextInt();
+    	 switch(choice) {
+    	 case 1:
+    		
+    		 number++;
+    		 System.out.println("Enter your name");
+    		 UserName[number]=sc1.nextLine();
+    		 System.out.println();
+    		 System.out.println("Enter the Password");
+    		 Password[number]=sc1.nextLine();
+    		 System.out.println();
+    		 System.out.println(UserName[number]+" your account created succussfully");
+    		 System.out.println();
+    		 
+    		 break;
+    		 
+    	 case 2:
+    		 System.out.println("Thanks for Visiting MyApp");
+    		 openApp=false;
+    		 break;
+    	 }
+     }
+    
+	}
+	
+
+}
